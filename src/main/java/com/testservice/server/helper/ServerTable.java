@@ -65,7 +65,7 @@ public class ServerTable {
 
 	/**
 	 * This method will setup a new server with the initial state of "Building". For simplicity
-	 * in this example we will be using the the hash table key as our server id and the server id is simply
+	 * in this example we will be using the hashtable key as our server id and the server id is simply
 	 * the current size of the table plus one.
 	 *
 	 * @param server pass in a server object
@@ -139,9 +139,9 @@ public class ServerTable {
 	}
 
 	/**
-	 * This method completely removes the server from the the hash table.
+	 * This method completely removes the server from the hashtable.
 	 *
-	 * @param id The id of the server we want to delete completely
+	 * @param id The id of the server we want to delete completely.
 	 */
 	public void deleteServer(int id) {
 		serverTable.remove(id);
@@ -150,7 +150,7 @@ public class ServerTable {
 	/**
 	 * Getter method for the server table.
 	 *
-	 * @return serverTable The hash table of servers.
+	 * @return serverTable The hashtable of servers.
 	 */
 	public static Hashtable<Integer, Server> getServerTable() {
 		return serverTable;

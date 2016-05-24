@@ -13,16 +13,16 @@ public class Server {
 	public String name;
 	public String serverState;
 	public int id;
-    public int cpus;
+	public int cpus;
 	public int ram;
 	public int disSpace;
 
 	public Server() {
 	}
 
-	//Constructor used buy web service
+	//Constructor used by web service
 	public Server(String name, int cpus, int ram, int disSpace) {
-        this.name = name;
+		this.name = name;
 		this.cpus = cpus;
 		this.ram = ram;
 		this.disSpace = disSpace;
@@ -46,12 +46,12 @@ public class Server {
 		this.name = name;
 	}
 
-    public int getId(){
+	public int getId(){
 		return id;
-    }
-    public void setId(int id) {
+	}
+	public void setId(int id) {
 		this.id = id;
-    }
+	}
 
 	public int getCpus() {
 		return cpus;

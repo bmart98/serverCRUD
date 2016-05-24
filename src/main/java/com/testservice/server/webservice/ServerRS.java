@@ -33,7 +33,7 @@ public class ServerRS {
 	ServerTable serverTable = new ServerTable();
 
 	/**
-	 * GET that returns a list of all available servers
+	 * GET that returns a list of all available servers.
 	 *
 	 * @return serverList
 	 */
@@ -45,7 +45,7 @@ public class ServerRS {
 	}
 
 	/**
-	 * GET that returns a single server based on the server ID
+	 * GET that returns a single server based on the server ID.
 	 *
 	 * @param id The ID of the requested server
 	 * @return The requested server
@@ -59,11 +59,11 @@ public class ServerRS {
 
 	/**
 	 * POST that creates a new server. This creates a new thread that simulates the build process for a server.
-	 * For this example we have will use a simple timeout of 35 seconds to emulate the build process. Once that is
-	 * completed it will change the thread state from "Building" to "Running".
+	 * For this example we will use a simple timeout of 35 seconds to emulate the build process. Once that is
+	 * completed it will change the server state from "Building" to "Running".
 	 *
 	 * @param server The server that we wish to create
-	 * @return serverList A list of all servers in their current state. Will show new server as "Building" until the timer completes.
+	 * @return serverList A list of all servers in their current state.
 	 */
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
@@ -92,7 +92,7 @@ public class ServerRS {
 	 * PUT that updates the specs on any available server.
 	 *
 	 * @param server The server we wish to update.
-	 * @return The the server that was updated with its new specs.
+	 * @return The server that was updated with its new specs.
 	 */
 	@PUT
 	@Produces(MediaType.APPLICATION_JSON)
@@ -101,10 +101,10 @@ public class ServerRS {
 	}
 
 	/**
-	 * PUT that will destroy the server and put in into the "Destroyed" state. Please not that path.
+	 * PUT that will destroy the server and put it into the "Destroyed" state. Please note the path.
 	 *
 	 * @param id The ID of the server we wish to destroy.
-	 * @return The server we put int he "Destroyed" state.
+	 * @return The server we put into the "Destroyed" state.
 	 */
 	@PUT
 	@Path("/destroy/{id}")
@@ -124,5 +124,5 @@ public class ServerRS {
 	public void deleteServer(@PathParam("id") int id) {
 		serverTable.deleteServer(id);
 	}
-	
+
 }
