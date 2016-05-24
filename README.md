@@ -25,7 +25,7 @@ Sample JSON to create a server:
 {"name":"Echo","cpus":12,"ram":64,"disSpace":2000}
 
 If the user includes the ID and server state in the JSON, it will be overridden with the ID the server assigns and will default
-to the "Building" state. Once it is done building it will change to the "Running" state. This process takes 35 seconds.
+to the "Building" state. Once it is done building it will change to the "Running" state. This process takes 35 seconds. Only builds one server per POST.
 
 ####URI to update a server
 PUT
