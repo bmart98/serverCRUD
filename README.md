@@ -49,7 +49,7 @@ DELETE
 
 
 ## Testing
-The easiest way to test this service is to use a browser plugin like RESTeast for firefox https://addons.mozilla.org/en-US/firefox/addon/rest-easy/
+The easiest way to test this service is to use a browser plugin like RESTeasy for firefox https://addons.mozilla.org/en-US/firefox/addon/rest-easy/
 
 
 
