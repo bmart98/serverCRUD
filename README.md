@@ -8,8 +8,6 @@ Then under target folder load the serverCRUD.war into tomcat.
 For information on how to setup tomcat please visit https://tomcat.apache.org/tomcat-7.0-doc/setup.html or https://tomcat.apache.org/tomcat-8.0-doc/setup.html.
 For information on how to install and use Maven please visit https://maven.apache.org/install.html and https://maven.apache.org/guides/getting-started/
 
-
-
 ## API
 ####The URI to display a  list of servers 
 GET
@@ -49,6 +47,9 @@ Easily change the state of a server to "Destoryed" by just the ID.
 DELETE
 /serverCRUD/ws/servers/{id}
 
+
+## Testing
+The easiest way to test this service is to use a browser plugin like RESTeast for firefox https://addons.mozilla.org/en-US/firefox/addon/rest-easy/
 
 
 
